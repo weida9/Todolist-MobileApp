@@ -27,7 +27,7 @@ A modern, user-friendly Android Todo List application built with Java and SQLite
 
 ## 📱 Screenshots
 
-*[Screenshots would be added here]*
+[Coming Soon]
 
 ## 🚀 Installation
 
@@ -41,7 +41,7 @@ A modern, user-friendly Android Todo List application built with Java and SQLite
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/TodoList.git
+   git clone [https://github.com/weida9/TodoList.git
    cd TodoList
    ```
 
@@ -214,8 +214,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@weida9](https://github.com/weida9)
+- Email: contact.weida@gmail.com
 
 ## 🙏 Acknowledgments
 
