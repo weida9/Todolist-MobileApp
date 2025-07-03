@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Daftar Tugas</string>
+    <string name="hint_add_task">Tambahkan tugas baru...</string>
+    <string name="button_add">Tambah</string>
+    <string name="empty_list">Belum ada tugas</string>
+    <string name="task_completed">Tugas selesai</string>
+    <string name="delete_task">Hapus</string>
+    <string name="edit_task">Edit</string>
+    <string name="save_task">Simpan</string>
+    <string name="cancel">Batal</string>
+    <string name="edit_task_title">Edit Tugas</string>
+    <string name="confirm_delete">Hapus tugas ini?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+</resources>

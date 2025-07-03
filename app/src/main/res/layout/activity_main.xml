@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    tools:context=".MainActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/app_name"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Input Section -->
+    <LinearLayout
+        android:id="@+id/layoutInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/input_background"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHeader">
+
+        <EditText
+            android:id="@+id/editTextTask"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_add_task"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary" />
+
+        <ImageButton
+            android:id="@+id/buttonAdd"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/button_add"
+            android:padding="12dp"
+            android:src="@drawable/ic_add"
+            app:tint="@color/primary" />
+
+    </LinearLayout>
+
+    <!-- Empty State -->
+    <LinearLayout
+        android:id="@+id/layoutEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInput">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📝"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/empty_list"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInput"
+        tools:listitem="@layout/item_todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
